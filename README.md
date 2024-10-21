@@ -10,6 +10,10 @@ You can install the package via Composer. Run the following command in your term
 composer require leandroferreirama/openai-php
 ```
 
+### Environment Configuration
+
+Before you start using the package, create a copy of the `.env.example` file and rename it to `.env`. Then, paste your OpenAI API key into the `.env` file.
+
 ## Usage
 
 ### Creating an Assistant
@@ -66,6 +70,10 @@ Você pode instalar o pacote via Composer. Execute o seguinte comando no seu ter
 ```bash
 composer require leandroferreirama/openai-php
 ```
+
+### Configuração do Ambiente
+
+Antes de começar a usar o pacote, crie uma cópia do arquivo `.env.example` e renomeie para `.env`. Em seguida, cole sua chave da API da OpenAI no arquivo `.env`.
 
 ## Uso
 
