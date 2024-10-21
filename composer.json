@@ -1,0 +1,13 @@
+{
+    "name": "leandroferreirama/openai-php",
+    "description": "OpenAI PHP Assistant API",
+    "autoload": {
+        "psr-4": {
+            "LeandroFerreiraMa\\OpenAI\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
