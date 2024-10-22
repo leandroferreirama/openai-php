@@ -12,9 +12,9 @@ class OpenAIClient
     private $thread;
     private $run;
 
-    public function __construct()
+    public function __construct(string $envFilePath)
     {
-        $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+        $dotenv = Dotenv::createImmutable($envFilePath);
         $dotenv->load();
         $apiKey = $_ENV['OPENAI_API_KEY'];
 

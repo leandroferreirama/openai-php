@@ -7,8 +7,11 @@ use LeandroFerreiraMa\OpenAI\OpenAIClient;
 use LeandroFerreiraMa\OpenAI\Model;
 
 try {
-    // Instância o cliente OpenAI
-    $client = new OpenAIClient();
+    // Caminho do arquivo .env
+    $envFilePath = __DIR__ . '/../'; // Ajuste conforme necessário
+
+    // Instância o cliente OpenAI com o caminho do arquivo .env
+    $client = new OpenAIClient($envFilePath);
 
     // 1. Criação do assistente com o modelo utilizando ENUN
     $assistant = $client->getAssistant()->create(Model::GPT_4, 'Responda como se você fosse um guia turístico.');
